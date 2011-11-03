@@ -1,3 +1,9 @@
+# revision 23092
+# category TLCore
+# catalog-ctan /language/polish/plhyph.tex
+# catalog-date 2009-10-07 21:35:42 +0200
+# catalog-license knuth
+# catalog-version 3.0a
 Name:		texlive-hyphen-polish
 Version:	3.0a
 Release:	1
@@ -48,6 +54,7 @@ LaMeX.
 %_texmf_language_dat_d/hyphen-polish
 %_texmf_language_def_d/hyphen-polish
 %_texmf_language_lua_d/hyphen-polish
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,6 +63,8 @@ LaMeX.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-polish <<EOF
 %% from hyphen-polish:
