@@ -46,12 +46,12 @@ LaMeX.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-polish <<EOF
-%% from hyphen-polish:
+\%\% from hyphen-polish:
 polish loadhyph-pl.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-polish <<EOF
-%% from hyphen-polish:
+\%\% from hyphen-polish:
 \addlanguage{polish}{loadhyph-pl.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
