@@ -6,7 +6,7 @@
 # catalog-version 3.0a
 Name:		texlive-hyphen-polish
 Version:	3.0a
-Release:	2
+Release:	3
 Summary:	Polish hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/polish/plhyph.tex
@@ -46,14 +46,16 @@ LaMeX.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-polish <<EOF
-\%\% from hyphen-polish:
+\%% from hyphen-polish:
 polish loadhyph-pl.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-polish
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-polish <<EOF
-\%\% from hyphen-polish:
+\%% from hyphen-polish:
 \addlanguage{polish}{loadhyph-pl.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-polish
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-polish <<EOF
 -- from hyphen-polish:
