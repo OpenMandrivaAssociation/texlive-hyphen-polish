@@ -1,4 +1,4 @@
-# revision 23092
+# revision 25990
 # category TLCore
 # catalog-ctan /language/polish/plhyph.tex
 # catalog-date 2009-10-07 21:35:42 +0200
@@ -6,7 +6,7 @@
 # catalog-version 3.0a
 Name:		texlive-hyphen-polish
 Version:	3.0a
-Release:	3
+Release:	4
 Summary:	Polish hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/polish/plhyph.tex
