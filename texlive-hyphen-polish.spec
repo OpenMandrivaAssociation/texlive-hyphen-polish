@@ -68,3 +68,25 @@ cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-polish <<EOF
 		hyphenation = 'hyph-pl.hyp.txt',
 	},
 EOF
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.0a-4
++ Revision: 804805
+- Update to latest release.
+
+* Tue Jan 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.0a-3
++ Revision: 767571
+- Add workaround to rpm bug that broke hyphenation files
+
+* Wed Jan 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.0a-2
++ Revision: 759931
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.0a-1
++ Revision: 718673
+- texlive-hyphen-polish
+- texlive-hyphen-polish
+- texlive-hyphen-polish
+- texlive-hyphen-polish
+
