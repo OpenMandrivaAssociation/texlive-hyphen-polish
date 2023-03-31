@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-polish
 Version:	58609
-Release:	1
+Release:	2
 Summary:	Polish hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/polish/plhyph.tex
