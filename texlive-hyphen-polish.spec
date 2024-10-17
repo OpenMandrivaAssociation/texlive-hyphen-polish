@@ -3,7 +3,7 @@ Version:	58609
 Release:	2
 Summary:	Polish hyphenation patterns
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/polish/plhyph.tex
+URL:		https://www.ctan.org/tex-archive/language/polish/plhyph.tex
 License:	KNUTH
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-polish.r%{version}.tar.xz
 BuildArch:	noarch
